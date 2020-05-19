@@ -1,0 +1,97 @@
+@import "./../config";
+
+#root {
+  font-family: $font-stack;
+  // border: 1px solid rgb(214, 203, 203);
+  // border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footers-landing {
+  position: fixed;
+  bottom: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(197, 194, 194, 0.322);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  .article-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px 20px;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+    margin: 12px 20px;
+  }
+}
+
+.main-container {
+  padding: 10px 20px;
+  margin-bottom: 80px;
+
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(197, 194, 194, 0.322);
+
+    .cover {
+      width: 100px;
+      height: 100px;
+    }
+
+    .title-container {
+      .title {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+
+      .read-more {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 13px;
+        margin-left: 10px;
+        font-weight: bold;
+        color: $primary-color;
+        cursor: pointer;
+
+        .right-arrow {
+          height: 10px;
+          margin-top: 5px;
+          margin-left: 10px;
+          transition: 0.3s ease-out;
+        }
+        &:hover .right-arrow {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active .right-arrow {
+      margin-left: 15px;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

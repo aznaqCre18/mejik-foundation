@@ -1,0 +1,97 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.setting-container {
+  .header-history {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(197, 194, 194, 0.322);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+
+    .back {
+      width: 15px;
+      height: 25px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .history-title {
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 3px;
+      color: $header-font;
+    }
+
+    .search {
+      width: 25px;
+      height: 25 px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  //History List
+
+  .container-history-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(197, 194, 194, 0.322);
+    padding-bottom: 10px;
+
+    .profile-info {
+      margin-left: 20px;
+      display: flex;
+
+      .img-container {
+        background-color: $secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+
+        img {
+          width: 90%;
+          height: 90%;
+        }
+      }
+
+      .name-container {
+        margin-top: 3px;
+        margin-left: 12px;
+        width: 180px;
+        .name {
+          font-weight: bold;
+          color: $font-primary;
+        }
+
+        .category {
+          font-size: 13px;
+          color: $font-secondary;
+        }
+      }
+    }
+    .timeline {
+      font-weight: bold;
+    }
+
+    .amount {
+      font-weight: bold;
+      color: $primary-color;
+      margin-right: 20px;
+    }
+  }
+}

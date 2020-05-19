@@ -1,0 +1,266 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+//Landing
+
+.container-login-regis {
+  padding: 20px;
+  .back-button {
+    margin: 20px 0px;
+    transition: 0.2s linear;
+    img {
+      width: 15px;
+      height: 25px;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .image-here {
+    width: 100%;
+    height: 200px;
+    background-color: $secondary-color;
+    // margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    .inner {
+      width: 60%;
+      height: 100px;
+      background-color: grey;
+      border-radius: 20px;
+    }
+  }
+
+  .title {
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: $font-primary;
+  }
+
+  .subtitle {
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    color: $font-secondary;
+  }
+
+  .login-button {
+    width: 80%;
+    height: 45px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 1.5rem;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .register-button {
+    width: 80%;
+    height: 45px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid $primary-color;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//Login-Email
+
+.container-login-email {
+  padding: 20px;
+  .back-button {
+    margin: 20px 0px;
+    transition: 0.2s linear;
+    img {
+      width: 15px;
+      height: 25px;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .image-here {
+    width: 200px;
+    height: 200px;
+    background-color: $secondary-color;
+    margin: 40px 0;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    .inner {
+      width: 120px;
+      height: 120px;
+      background-color: grey;
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    color: $font-primary;
+  }
+
+  .subtitle {
+    width: 80%;
+    color: $font-secondary;
+  }
+
+  .email-input {
+    .label {
+      font-weight: bold;
+      margin-top: 20px;
+      color: $font-primary;
+    }
+    .input-email {
+      width: 100%;
+      height: 45px;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .next-button {
+    width: 100%;
+    background-color: $primary-color;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+//Login-Password
+
+.container-login-password {
+  padding: 20px;
+  .back-button {
+    margin: 20px 0px;
+    transition: 0.2s linear;
+    img {
+      width: 15px;
+      height: 25px;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .image-here {
+    width: 200px;
+    height: 200px;
+    background-color: $secondary-color;
+    margin: 40px 0;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    .inner {
+      width: 120px;
+      height: 120px;
+      background-color: grey;
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    color: $font-primary;
+  }
+
+  .subtitle {
+    width: 80%;
+    color: $font-secondary;
+  }
+
+  .password-input {
+    .label {
+      font-weight: bold;
+      margin-top: 20px;
+      color: $font-primary;
+    }
+    .input-password {
+      width: 100%;
+      height: 45px;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .invalid-login {
+    color: red;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+
+  .continue-button {
+    width: 100%;
+    background-color: $primary-color;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+  }
+}

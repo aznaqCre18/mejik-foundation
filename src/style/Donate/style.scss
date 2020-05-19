@@ -1,0 +1,212 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container-donation {
+  display: flex;
+  flex-direction: column;
+  .header-donate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(197, 194, 194, 0.322);
+
+    .close {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .donate-title {
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 3px;
+      color: $header-font;
+    }
+
+    .history {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .main-container-donation {
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 0;
+    margin-bottom: 101px;
+    overflow-x: scroll;
+    .title-target {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      margin-top: 15px;
+    }
+
+    .target-category {
+      overflow: auto;
+      white-space: nowrap;
+      padding: 5px;
+      margin-top: 1px;
+      .activ {
+        border: 1px solid $primary-color;
+      }
+
+      .inner-span {
+        padding: 5px 10px;
+        background-color: #fff;
+        box-shadow: 0 0 3px grey;
+        border-radius: 15px;
+        margin-right: 10px;
+
+        .label {
+          cursor: pointer;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .check-box {
+          opacity: 0.5;
+        }
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .beficiaries-container {
+      display: flex;
+      flex-wrap: wrap;
+      transition: 0.3s;
+
+      .on-selected {
+        border: 2px solid $primary-color;
+        transition: 0.3s;
+
+        img.check {
+          width: 15px;
+          height: 15px;
+          position: relative;
+          left: 45px;
+          bottom: -5px;
+          display: block !important;
+        }
+      }
+
+      .target-container {
+        width: 120px;
+        height: 150px;
+        background-color: #fff;
+        box-shadow: 0 0 3px rgba(185, 178, 178, 0.788);
+        margin-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          opacity: 0.5;
+        }
+
+        .profile-pict {
+          background-color: $secondary-color;
+          border-radius: 50%;
+          padding: 15px;
+          margin-top: -5px;
+        }
+        .name-target {
+          margin-top: 10px;
+          font-weight: bolder;
+        }
+        .category {
+          font-size: 13px;
+          color: $font-secondary;
+        }
+        //See All
+
+        .arrow-pict {
+          width: 35px;
+          height: 35px;
+          margin-bottom: 10px;
+        }
+
+        .see-title {
+          color: $primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .input-amount-container {
+      .input-amount {
+        width: 96%;
+        height: 35px;
+        border: none;
+        background-color: #f0f2f5;
+        padding-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .footer-donation {
+    padding: 20px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 450px;
+    border-top: 0.5px solid rgba(128, 128, 128, 0.24);
+    background-color: #fff;
+    .total {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 13px;
+
+      .total-title {
+        font-weight: 600;
+        color: $font-primary;
+      }
+
+      .total-amount {
+        font-weight: 600;
+        color: $primary-color;
+      }
+    }
+
+    .button-donate {
+      width: 100%;
+      background-color: $primary-color;
+      margin-top: 5px;
+      height: 45px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}

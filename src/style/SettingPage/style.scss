@@ -1,0 +1,153 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container-before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 450px;
+  position: absolute;
+
+  .to-login-btn {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: $primary-color;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.main-container {
+  padding: 0;
+
+  .profile-pict-container {
+    background-color: $primary-color;
+    height: 200px;
+
+    .edit {
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+      transition: 0.3s ease;
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+  .profile-pict {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    .profile {
+      border: 3px solid white;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .detail-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+      font-size: 25px;
+      font-weight: bold;
+      color: $font-primary;
+      margin-top: 10px;
+    }
+
+    .email {
+      color: $font-secondary;
+    }
+
+    .phone {
+      color: $font-secondary;
+      margin-bottom: 25px;
+    }
+  }
+
+  .section-menu {
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      border-bottom: 1px solid rgba(197, 194, 194, 0.322);
+
+      .title-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+          width: 25px;
+          height: 25px;
+          margin-left: 20px;
+        }
+
+        .lock {
+          width: 25px;
+          height: 30px;
+          margin-left: 20px;
+          margin-top: -2px;
+        }
+
+        .title {
+          margin-left: 10px;
+          font-weight: bold;
+          color: $font-primary;
+        }
+
+        .title-logout {
+          color: $primary-color;
+          margin-left: 10px;
+          font-weight: bold;
+        }
+      }
+
+      .in {
+        width: 10px;
+        height: 20px;
+        margin-right: 20px;
+      }
+
+      .out {
+        width: 25px;
+        height: 23px;
+        margin-right: 20px;
+      }
+
+      transition: 0.2s ease;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.footers-landing {
+  position: fixed;
+  bottom: 0;
+}
